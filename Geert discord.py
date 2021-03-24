@@ -45,7 +45,7 @@ async def on_message(message):
         await message.channel.send('Bekijk hier mijn fantastische film over de islam: https://vimeo.com/174087977')
 
     if message.content.startswith('!Help'):
-        await message.channel.send('!Geert: genereert een van mijn willekeurige quotes\n!Fitna: speelt mijn film over de islam af')
+        await message.channel.send('!Geert: genereert een van mijn quotes\n!Fitna: speelt mijn film over de islam af')
 
     if any(word in mesg for word in islam_woorden):
         await message.channel.send(random.choice(islam_woorden_antwoord))
