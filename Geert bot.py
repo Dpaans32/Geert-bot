@@ -1,9 +1,14 @@
+import random
+
 f = open("Geert.txt", "r")
 quotelist = []
 
 for quote in f.readlines():
-    quotelist.append(quote.replace('\n', 'n'))
+    quotelist.append(quote.replace('\n', ''))
 
 f.close()
 
-print(quotelist)
+def getRandom(list):
+    return random.choice(list)
+
+print(getRandom(quotelist))
