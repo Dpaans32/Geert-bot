@@ -1,7 +1,9 @@
 f = open("Geert.txt", "r")
+quotelist = []
 
-list_of_lists = [(line.strip()).split() for line in f]
+for quote in f.readlines():
+    quotelist.append(quote.replace('\n', 'n'))
 
 f.close()
 
-print(list_of_lists)
+print(quotelist)
