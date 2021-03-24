@@ -10,5 +10,3 @@ f.close()
 
 def getRandom(list):
     return random.choice(list)
-
-print(getRandom(quotelist))
